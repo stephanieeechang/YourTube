@@ -1,0 +1,22 @@
+{
+  "name": "YourTube",
+  "version": "1.0",
+  "description": "HackGT Project",
+  "permissions": ["declarativeContent", "storage", "activeTab", "tabs", "<all_urls>"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "YourTube.png",
+      "32": "YourTube.png",
+      "48": "YourTube.png",
+      "128": "YourTube.png"
+    }
+  },
+  "icons": {
+    "16": "YourTube.png",
+    "32": "YourTube.png",
+    "48": "YourTube.png",
+    "128": "YourTube.png"
+  },
+  "manifest_version": 2
+}

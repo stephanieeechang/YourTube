@@ -1,5 +1,6 @@
 var video = document.getElementsByClassName("html5-video-player")[0];
 var vidTime = document.getElementById("movie_player");
+var vidFrame = document.getElementById("player");
 
 // mirrors the video
 function mirroring() {
@@ -19,4 +20,10 @@ function replay(start, end) {
 // rewinds the video
 function rewind() {
     vidTime.seekTo(vidTime.getCurrentTime -= .05);
+}
+
+// makes background black when user uses theatre mode
+function blackMode() {
+    document.body.style.backgroundImage = "url('black.jpg')";
+    // document.body.style.background = black;
 }

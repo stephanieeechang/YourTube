@@ -18,10 +18,10 @@
   <tr>
 
     <td>
-      <p style="text-align: left; padding-left: 10%; padding-right: 10%;">Speed: <span id="playSpeed">1x</span></p>
+      <p id="playSpeed" style="text-align: left; padding-left: 10%; padding-right: 10%;">Speed: 1x</p>
       <p style="text-align: left; padding-left: 10%; padding-right: 10%;">
-        <button type="button" id="down">-</button>
-        <button type="button" id="up">+</button>
+        <button type="button" id="down" title="Slows down video (Command-Left Arrow)">-</button>
+        <button type="button" id="up" title="Speeds up video (Command-Right Arrow)">+</button>
       </p>
     </td>
 
@@ -30,10 +30,10 @@
   <tr>
 
     <td>
-      <p style="text-align: left; padding-left: 10%; padding-right: 10%;">Mirror: Off</p>
+      <p id ="toggleMirrorText" style="text-align: left; padding-left: 10%; padding-right: 10%">Mirror: Off</p>
       <p style="text-align: left; padding-left: 10%; padding-right: 10%;">
-        <label class="switch">
-          <input type="checkbox">
+        <label class="switch" title="Mirrors video">
+          <input id="toggleMirror" type="checkbox">
           <span class="toggle"></span>
         </label>
       </p>
@@ -44,9 +44,37 @@
   <tr>
 
     <td>
-      <p style="text-align: left; padding-left: 10%; padding-right: 10%;">Rotation: 0°</p>
+      <p id="slideRotation" style="text-align: left; padding-left: 10%; padding-right: 10%;">Rotation: 0°</p>
       <p style="text-align: left; padding-left: 10%; padding-right: 10%;">
-        <input type="range" min="-360" max="360" value="0" class="slider" id="myRange">
+        <input type="range" min="-360" max="360" value="0" class="slider" id="myRange" title="Turns counterclockwise 90˚(Command-Up Arrow)">
+      </p>
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td>
+      <p id="toggleCommentsText" style="text-align: left; padding-left: 10%; padding-right: 10%">Comments: On</p>
+      <p style="text-align: left; padding-left: 10%; padding-right: 10%;">
+        <label class="switch" title="Disables/enables comments">
+          <input id="toggleComments" type="checkbox" checked>
+          <span class="toggle"></span>
+        </label>
+      </p>
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td>
+      <p id="toggleRecommendedText" style="text-align: left; padding-left: 10%; padding-right: 10%">Recommended: On</p>
+      <p style="text-align: left; padding-left: 10%; padding-right: 10%;">
+        <label class="switch" title="Disables/enables video recommendation">
+          <input id="toggleRecommended" type="checkbox" checked>
+          <span class="toggle"></span>
+        </label>
       </p>
     </td>
 
